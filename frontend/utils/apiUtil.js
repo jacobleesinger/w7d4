@@ -10,12 +10,21 @@ var fetchAllPokemons = function () {
   });
 };
 
-var fetchOnePokemon = function () {
+var fetchOnePokemon = function (id) {
+  $.ajax({
+    url: 'api/pokemon/' + id,
+    method: 'get',
+    success: function(pokemon) {
+      PokemonActions.receiveOnePokemon(pokemon);
+    }
 
-}
+  })
+
+};
 ;
 var fetchObject = {
-  fetchAllPokemons: fetchAllPokemons
+  fetchAllPokemons: fetchAllPokemons,
+  fetchOnePokemon: fetchOnePokemon
 };
 
 

@@ -1,0 +1,2 @@
+Pokedex::Application.config.secret_key_base =
+'cb7b77bc1c20a2123b77faaa13765ecdfce2fe0fa7f252cd07fa1ce4517593d000ef18166f3cb49a22191236f9edc0bafb4f03574abbbbbf348b5149138d0618'

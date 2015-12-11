@@ -18,6 +18,11 @@ var pokemonDetail = React.createClass({
       pokemon: this.getStateFromStore()
     });
   },
+
+  componentWillRecieveProps: function(newProps) {
+    ApiUtil.fetchOnePokemon(parseInt(newProps.params.pokemonId));
+  },
+  
   componentDidMount: function(){
     this.PokemonToken = PokemonStore.addListener(this._onChange);
   },
