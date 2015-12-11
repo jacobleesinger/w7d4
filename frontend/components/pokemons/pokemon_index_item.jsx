@@ -1,4 +1,4 @@
-var PokemonsIndex = require('./pokemonsIndex'),
+var PokemonsIndex = require('./pokemons_index'),
     React = require('react'),
     History = require('react-router').History;
 

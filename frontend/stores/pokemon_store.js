@@ -1,7 +1,7 @@
 var Store = require('flux/utils').Store;
 var Dispatcher = require('../dispatcher/dispatcher.js');
-var fetchObject = require('../utils/apiUtil');
-var PokemonConstants = require('../constants/pokemonConstants');
+var fetchObject = require('../utils/api_util');
+var PokemonConstants = require('../constants/pokemon_constants');
 
 var _pokemons = {};
 

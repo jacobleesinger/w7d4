@@ -1,5 +1,5 @@
 var React = require('react'),
-    PokemonsIndex = require('./pokemons/pokemonsIndex');
+    PokemonsIndex = require('./pokemons/pokemons_index');
 
 var App = React.createClass({
 

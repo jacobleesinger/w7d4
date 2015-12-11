@@ -1,6 +1,6 @@
 var React = require('react'),
-    PokemonStore = require('../../stores/pokemon'),
-    PokemonIndexItem = require('./PokemonIndexItem');
+    PokemonStore = require('../../stores/pokemon_store'),
+    PokemonIndexItem = require('./pokemon_index_item');
 
 var PokemonsIndex = React.createClass({
   getInitialState: function(){

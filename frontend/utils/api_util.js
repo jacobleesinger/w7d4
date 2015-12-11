@@ -1,4 +1,4 @@
-var PokemonActions = require('../actions/pokemonActions');
+var PokemonActions = require('../actions/pokemon_actions');
 
 var fetchAllPokemons = function () {
   $.ajax({
