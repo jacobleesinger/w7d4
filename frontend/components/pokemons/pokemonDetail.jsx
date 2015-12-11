@@ -42,8 +42,20 @@ var pokemonDetail = React.createClass({
             <div className="detail">
               <ul>
                 <li>Pokemon: {this.state.pokemon.name}</li>
+                <li>Type: {this.state.pokemon.poke_type}</li>
                 <li>Attack: {this.state.pokemon.attack}</li>
                 <li>Defense: {this.state.pokemon.defense}</li>
+                <li>Moves:
+                  {this.state.pokemon.moves.map(function(move){
+                      return (
+                        <div>
+                          {move}
+                          <br />
+                        </div>
+                        );
+                    })
+                  }
+                </li>
               </ul>
               <img src={this.state.pokemon.image_url} />
 
