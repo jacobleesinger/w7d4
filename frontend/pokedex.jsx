@@ -1,8 +1,6 @@
 var React = require('react'),
     ReactDOM = require('react-dom'),
     fetchObject = require('./utils/api_util'),
-    PokemonStore = require('./stores/pokemon_store'),
-    PokemonsIndex = require('./components/pokemons/pokemons_index'),
     Router = require('react-router').Router,
     Route = require('react-router').Route,
     App = require('./components/app'),
@@ -25,6 +23,4 @@ document.addEventListener("DOMContentLoaded", function() {
   );
 
   fetchObject.fetchAllPokemons();
-
-  window.PokemonStore = PokemonStore;
 });

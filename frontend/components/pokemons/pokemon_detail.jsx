@@ -1,6 +1,5 @@
 var React = require('react'),
     PokemonStore = require('../../stores/pokemon_store'),
-    PokemonActions = require('../../actions/pokemon_actions'),
     ApiUtil = require('../../utils/api_util');
 
 var pokemonDetail = React.createClass({
